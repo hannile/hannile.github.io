@@ -1,3 +1,179 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd618b09e52dad8ea145b5d5f0bd7a47e515f06896c9cb745b84579c12cb00e1
-size 2304
+@import "_reset.css";
+
+body {
+    font-family: sans-serif, helvetica; 
+    color: black;
+    font-size: 0.9em;
+}
+
+main {
+    font-family: sans-serif, helvetica; 
+    color: black;
+    font-size: 0.9em;
+}
+
+header {
+    display: inline-flex;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-bottom: 10em;
+    padding-top: 1em;
+    position: fixed;
+    z-index: 1;
+    font-size: 0.9em;
+}
+
+a {
+    display: inline-flex;
+    filter: blur(3px);
+    color: rgba(0, 0, 0, 0.447);
+}
+
+a:hover  {
+    text-decoration: none;
+    color: black;
+    filter: none;
+    
+}
+
+
+a:hover.projekthead  {
+    color: black;
+    filter: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+video {
+    display: block;
+}
+
+
+/* js */
+.click {
+    cursor: pointer;
+}
+
+
+/*navigation*/
+
+.headers {
+    width: 100%;
+    display:flex;
+    align-items: flex-start;
+}
+
+.projects {
+    display: inline-flex;
+}
+
+
+/* new jquery header*/
+.project {
+    width: 100%;
+}
+
+.project-item {
+    display: none;
+}
+
+.project-item.is-visible {
+    display: block;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.list {
+    display:flex;
+    flex-wrap: wrap;
+    top: 7%;
+    padding-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/*projects*/
+
+.description {
+    padding-left: 5px;
+    text-align: left;
+    width: 40%;
+  
+}
+
+.descriptions {
+    text-align: left;
+    width: 40%;
+}
+
+.background{
+    margin: 0%;
+}
+
+.images {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.videos {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* 
+.stick {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
+
+
+/* info */
+.contact {
+    padding-left: 5px;
+    width: 40%;
+}
+
+.johanna {
+    text-align: left;
+    width: 30%;
+}
+
+
+
+@media (max-width: 600px) {
+   
+    a {
+        text-decoration: none;
+        filter: none;
+        color: rgba(0, 0, 0, 0.170);
+    }
+    
+   
+
+    .list {
+       top: 30%;
+    }
+
+    .contact {
+        padding-left: 5px;
+        width: 100%;
+    }
+
+    .johanna {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top:10px;
+        text-align: left;
+        width: 100%;
+    }
+
+}
